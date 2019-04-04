@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_yellow">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="信息"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/down_group"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white">
+
+            <TextView
+                android:id="@+id/local_mc"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/local"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@color/bg_yellow"/>
+            <TextView
+                android:id="@+id/online"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/online"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@color/bg_yellow"/>
+            <TextView
+                android:id="@+id/owner"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/owner"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@color/bg_yellow"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/colorAccent"
+        android:layout_above="@id/down_group"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_top_bar"
+        android:layout_above="@id/div_tab_bar"
+        android:id="@+id/ly_content"/>
+
+</RelativeLayout>

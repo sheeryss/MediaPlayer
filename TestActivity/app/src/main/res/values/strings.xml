@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test Activity</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="Myfragment">Test Fragment</string>
+    <string name="local">本地音乐</string>
+    <string name="online">在线音乐</string>
+    <string name="owner">我的</string>
+</resources>
