@@ -7,4 +7,6 @@
     <string name="local">本地音乐</string>
     <string name="online">在线音乐</string>
     <string name="owner">我的</string>
+    <string name="list">音乐列表</string>
+    <string name="setting">设置</string>
 </resources>
